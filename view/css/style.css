@@ -1,0 +1,319 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    padding-top: 92px;
+    margin:0;
+    height: 100%;
+    min-height: 100%;
+    min-width: 1000px; 
+    background: #212326;
+}
+
+p{
+    color:white;
+}
+button{
+    padding: 4px 20px 4px;
+    color:whitesmoke;
+    border-radius: 20px;
+    background: #505050;
+    background: -moz-linear-gradient(top, #505050 0%, #2E2E2E 50%, #505050 100%);
+    background: -webkit-linear-gradient(top, #505050 0%, #2E2E2E 50%, #505050 100%);
+    background: linear-gradient(to bottom, #505050 0%, #2E2E2E 50%, #505050 100%);
+}
+
+
+form {
+    width: -webkit-fill-available;
+    text-align: center;
+    display: inline-block;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+/******************** NAV BARRE*************************/
+.navbar {
+  width:100%;
+  display:flex;
+  /*justify-content:flex-end;*/
+  overflow: hidden;
+  background-color: #333 !important;
+}
+.navbar:first-of-type div {
+  
+  flex: 0 1 20%;
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  margin-left: -0.3em;
+  margin-right: -0.3em;
+    
+}
+
+.navbar>div:nth-of-type(2){
+    max-width: 80%;
+    color:red !important;
+    flex: 0 1 calc(100% - 120px);
+    text-align: right;
+    vertical-align:middle;
+}
+
+/* Navbar links */
+.navbar a {
+  font-family: 'Montserrat', sans-serif;
+  color: #f2f2f2;
+  text-align: center;
+  position:relative;
+  top:25%;
+  text-decoration: none;
+  vertical-align:middle;
+}
+
+.navbar a:hover{
+    color:#ff6633;
+}
+
+.navbar img{
+    position: inherit;
+    max-height: 50px;
+    top: -20%;
+    max-width:100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.navbar em {
+  font:message-box;
+  vertical-align:middle;
+  color: whitesmoke;
+  text-align: center;
+  position:relative;
+  top:25%;
+  text-decoration: none;
+}
+
+.sticky {
+	background-color: #ffffff;
+        position: -webkit-sticky;
+        position: fixed;
+	top: 0;
+}
+
+/**
+ * Display lists on a single line.
+ * @bugfix Prevent webkit from removing list semantics
+ * 1. Add a non-breaking space
+ * 2. Make sure it doesn't mess up the DOM flow
+
+.list-inline {
+	list-style: none;
+	margin-left: -0.3em;
+	margin-right: -0.3em;
+	padding: 0;
+}
+
+.list-inline > div {
+	display: inline-block;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+ */
+
+
+/*******************************************************/
+
+
+
+
+/*****************Homepage*****************************/
+
+.textBox{
+    color:#fff;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 0;
+    font-size: 20px;
+    background-color: #222;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 1px 5px 24px 15px rgba(0,0,0,0.53);
+    
+}
+
+footer{
+    background-color:#171a21;
+    padding:15px;
+    display:block;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;    
+
+}
+
+footer>div{
+    width: 100%;
+    max-width: 1000px;
+    display:flex;
+    font-size:14px;
+    line-height: 25px;
+    margin:0 auto;
+    color:#666;    
+}
+
+.homepage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    vertical-align: middle;
+    text-align: center;
+    
+}
+
+.image img{
+    vertical-align: bottom;
+    max-width: 600px;
+    height:100%;
+}
+
+.homeText{
+    font-size:20px;
+    padding-left:20px;
+}
+
+/*******************************************************/
+
+.gradient-border {
+  --borderWidth: 3px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #333333,#666666);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 9s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+/*****************MacroMaker*****************************/
+
+textarea{
+    color: whitesmoke;
+    padding-left: 15px;
+    background-color: #4D4D4D;
+    border-radius: 4px;
+    resize: none;
+    border-top: 2px inset #8d658db3;
+    border-bottom: 2px inset #22222254;
+
+}
+.js-copytextarea{
+    width: calc(100% - 25px);
+    
+}
+.fakeMacroFFXIV{
+    border: 2px groove #F9ED93;
+    border-radius: 20px;
+    padding-left: 4px;
+    padding-right:4px;
+    /*background-color:#272627;*/
+    background-image: url(./imgs/background.jpg);
+    background-repeat: repeat;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+img#macroIcon{
+    max-width: 50px;
+    vertical-align: super;
+}
+
+textarea#topMacroTextArea {
+    resize:none;
+    outline:none;
+    width:calc(100% - 85px);
+    margin:10px;
+    margin-right:-10px;
+    
+}
+
+.macroTop {
+    padding-left: 5px;
+}
+
+.macroBottom {
+    padding-left: 5px;
+}
+
+button.js-textareacopybtn {
+    margin-right: 6px;
+    margin-left: auto;
+    display: block;
+}
+
+select {
+    height: fit-content;
+    align-self: center;
+    margin:10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';    
+    font-size:20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    background-color: #333333;
+    color: white;
+}
+
+.comboBoxes {
+    display: inline-flex;
+}
+
+/* en fait c'est beau donc devient generaliste
+button.js-textareacopybtn {
+    margin-right: 6px;
+    margin-left: auto;
+    padding: 4px 20px 4px;
+    display: block;
+    color:whitesmoke;
+    border-radius: 20px;
+    background: #505050;
+    background: -moz-linear-gradient(top, #505050 0%, #2E2E2E 50%, #505050 100%);
+    background: -webkit-linear-gradient(top, #505050 0%, #2E2E2E 50%, #505050 100%);
+    background: linear-gradient(to bottom, #505050 0%, #2E2E2E 50%, #505050 100%);
+}
+*/
+/*******************************************************/
+
+
+
+
